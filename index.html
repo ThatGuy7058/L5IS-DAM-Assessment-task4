@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+          box-sizing: border-box;
+        }
+        body {
+          margin: 0;
+        }
+        /* Style the header */
+        .header {
+          padding: 10px;
+          text-align: center;
+        }
+        .footer {
+          background-color: gray;
+          padding: 10px;
+          text-align: left;
+        }
+        /* Style the top navigation bar */
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        /* Style the topnav links */
+        .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        /* Change color on hover */
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        /* Create three equal columns that floats next to each other */
+        .column {
+          text-align: center;
+          float: left;
+          padding: 10px;
+        }
+        /* Left and right column */
+        .column.side {
+          width: 50%;
+        }
+        /* middle column */
+        .column.middle {
+          width: 50%;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+          
+          content: "";
+          display: table;
+          clear: both;
+        }
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width:600px) {
+          .column {
+            width: 100%;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/The_Westfield_Group_logo.svg/1200px-The_Westfield_Group_logo.svg.png" width="200px">
+        <h1>Making tech easy</h1>
+    </div>
+
+    <div class="row">
+      <div class="column side">
+        <h2>McDonald's</h2>
+        <img src="https://synthetron.com/wp-content/uploads/2019/02/2000px-McDonalds_logo.svg_.png" width="200px">
+        <p>McDonald's Corporation is an American fast food company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States</p>
+        <br><h2>Paper Plus</h2>
+        <img src="https://paperplus-cdn.freetls.fastly.net/modules/custom/images/logo.png" width="400px">
+        <p>New Zealand's largest retailer of books, stationery, magazines and cards, with 100+ stores nationwide.</p>
+      </div>
+      
+      <div class="column middle">
+        <h2>Burger King</h2>
+        <img src="https://cdn.buttercms.com/DTDbj71VT0GRkb4jPYai" width="400px">
+        <p>Burger King is an American multinational chain of hamburger fast food restaurants. Headquartered in Miami-Dade County, Florida, the company was founded in 1953 as Insta-Burger King, a Jacksonville, Florida–based restaurant chain</p>
+        <br><h2>KFC</h2>
+        <img src="https://pngimg.com/uploads/kfc/kfc_PNG2.png" width="400px">
+        <p>KFC is an American fast food restaurant chain headquartered in Louisville, Kentucky, that specializes in fried chicken. It is the world's second-largest restaurant chain after McDonald's, with 22,621 locations globally in 150 countries as of December 2019. The chain is a subsidiary of Yum!</p>
+      </div>
+    </div>
+
+    <form>
+      <label for="fname">Full Name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Phone:</label><br>
+      <input type="email" id="uemail" name="uemail"><br>
+      <label for="fname">Email:</label><br>
+      <input type="text" id="subject" name="subject"><br>
+      <label for="message">Message:</label><br>
+      <input type="text" id="message" name="message"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <div class="footer">
+        <img src="https://www.millenia3.com/wp-content/uploads/2017/11/facebook.png" width="40px">
+        <img src="https://3.bp.blogspot.com/-NxouMmz2bOY/T8_ac97cesI/AAAAAAAAGg0/e3vY1_bdnbE/s1600/Twitter+logo+2012.png" width="40px">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" width="40px">
+        <img src="https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN=s180" width="40px">
+      </div>
+</body>
+</html>
